@@ -5,49 +5,50 @@
     <head>
         <meta charset="utf-8" />
         <title> 삼성 x 패스트캠퍼스 Test - JeongYunKi </title>
-        .container{
-            width: auto;
-            display: grid;
-            background-color: aqua;
-            padding: 10px;
-        }
-
-        .item{
-            background-color: yellowgreen;
-            margin: 5px;
-        }
 
 
-        /* 0~199px 인 경우 */
-        @media (max-width: 299px ){
+        <style>
             .container{
-                background-color: purple;
-                grid-template-rows: 1fr 1fr 1fr;
-                color: white;
-            }
-        }
-        /* 200px ~ 599px 인 경우 */
-        @media (min-width: 300px) and (max-width: 599px){
-            .container{
-                background-color: orange;
-                grid-template-columns: 1fr 1fr 1fr;
-                color: white;
-            }
-        }
-        /* 600px ~ 인 경우 */
-        @media (min-width:600px){
-            .container{
+                width: auto;
+                display: grid;
                 background-color: aqua;
-                grid-template-columns: 1fr 1fr 1fr;
-                color: black;
+                padding: 10px;
             }
-
+            
             .item{
-                background-color: purple;
-                color: white;
+                background-color: yellowgreen;
+                margin: 5px;
             }
-        }
-
+                    /* 0~199px 인 경우 */
+            @media (max-width: 299px ){
+                .container{
+                    background-color: purple;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    color: white;
+                }
+            }
+            /* 200px ~ 599px 인 경우 */
+            @media (min-width: 300px) and (max-width: 599px){
+                .container{
+                    background-color: orange;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    color: white;
+                }
+            }
+            /* 600px ~ 인 경우 */
+            @media (min-width:600px){
+                .container{
+                    background-color: aqua;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    color: black;
+                }
+            
+                .item{
+                    background-color: purple;
+                    color: white;
+                }
+            } 
+        </style>
     </head>
     
     <body>
